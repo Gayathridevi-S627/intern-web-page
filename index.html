@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gayathridevi | Portfolio</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            background:#fff7fb;
+            color:#2d2d2d;
+        }
+
+        header{
+            width:100%;
+            padding:22px 8%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:fixed;
+            top:0;
+            background:rgba(255,255,255,0.9);
+            backdrop-filter:blur(10px);
+            z-index:1000;
+        }
+
+        .logo{
+            font-size:28px;
+            font-weight:700;
+            color:#db2777;
+        }
+
+        nav a{
+            text-decoration:none;
+            margin-left:30px;
+            color:#444;
+            font-weight:500;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#db2777;
+        }
+
+        .hero{
+            min-height:100vh;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:120px 8%;
+            flex-wrap:wrap;
+        }
+
+        .hero-text{
+            flex:1;
+            min-width:300px;
+        }
+
+        .hero-text h3{
+            color:#db2777;
+            font-size:22px;
+            margin-bottom:10px;
+        }
+
+        .hero-text h1{
+            font-size:65px;
+            line-height:1.2;
+            margin-bottom:20px;
+            color:#111827;
+        }
+
+        .hero-text p{
+            font-size:18px;
+            line-height:1.9;
+            color:#555;
+            max-width:600px;
+            margin-bottom:35px;
+        }
+
+        .buttons button{
+            padding:14px 30px;
+            border:none;
+            border-radius:30px;
+            font-size:16px;
+            cursor:pointer;
+            margin-right:15px;
+            transition:0.3s;
+        }
+
+        .btn1{
+            background:#db2777;
+            color:white;
+        }
+
+        .btn1:hover{
+            background:#be185d;
+        }
+
+        .btn2{
+            background:white;
+            border:2px solid #db2777;
+            color:#db2777;
+        }
+
+        .btn2:hover{
+            background:#db2777;
+            color:white;
+        }
+
+        .hero-image{
+            flex:1;
+            text-align:center;
+            min-width:300px;
+        }
+
+        .hero-image img{
+            width:380px;
+            max-width:100%;
+        }
+
+        .section{
+            padding:90px 8%;
+        }
+
+        .section-title{
+            text-align:center;
+            font-size:42px;
+            margin-bottom:60px;
+            color:#111827;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:20px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.08);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card h3{
+            color:#db2777;
+            margin-bottom:15px;
+            font-size:24px;
+        }
+
+        .card p{
+            color:#555;
+            line-height:1.7;
+        }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            background:#db2777;
+            color:white;
+            margin-top:50px;
+        }
+
+        @media(max-width:900px){
+
+            .hero{
+                flex-direction:column-reverse;
+                text-align:center;
+            }
+
+            .hero-text h1{
+                font-size:48px;
+            }
+
+            nav{
+                display:none;
+            }
+
+            .hero-text p{
+                margin:auto;
+                margin-bottom:30px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">Gayathridevi</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h3>Full Stack Developer</h3>
+
+            <h1>
+                Creating Elegant <br>
+                Digital Experiences
+            </h1>
+
+            <p>
+                Hello! I'm Gayathridevi, a 3rd Year Computer Science and Engineering student
+                at Kumaraguru College of Technology.
+                My primary interest is Full Stack Development,
+                where I love building modern, user-friendly,
+                and impactful web applications.
+                I also explore Machine Learning and Deep Learning technologies
+                to solve real-world problems.
+            </p>
+
+            <div class="buttons">
+
+                <button class="btn1">
+                    View Projects
+                </button>
+
+                <button class="btn2">
+                    Hire Me
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/4140/4140047.png">
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2 class="section-title">What I Do</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Frontend Design</h3>
+
+                <p>
+                    Building clean, responsive,
+                    and visually attractive user interfaces
+                    using HTML, CSS, and modern design principles.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Backend Development</h3>
+
+                <p>
+                    Creating backend systems and full stack applications
+                    using Java and database integration.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>AI & ML Projects</h3>
+
+                <p>
+                    Working on Machine Learning and Deep Learning models
+                    for intelligent prediction systems and analytics.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Expense Tracker</h3>
+
+                <p>
+                    Developed a Full Stack Java application
+                    to manage expenses, income,
+                    and financial records efficiently.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Customer Churn Prediction</h3>
+
+                <p>
+                    Built ML and DL models to predict customer churn
+                    using customer behavior data and classification techniques.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        © 2026 Gayathridevi | Portfolio Website
+
+    </footer>
+
+</body>
+
+</html>
